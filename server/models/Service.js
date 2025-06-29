@@ -5,6 +5,7 @@ const serviceSchema = new mongoose.Schema({
     description: { type: String, required: true },
     examples: { type: String, required: true },
     price: { type: Number, required: true },
+    imageUrl: { type: String },
     finishing: { type: String, required: true }
 })
 
