@@ -1,5 +1,4 @@
 import "./App.sass"
-import dotenv from "dotenv"
 import { useState, useEffect } from "react"
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
 import Header from "./components/Header"
