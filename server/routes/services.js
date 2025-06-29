@@ -5,14 +5,7 @@ const router = express.Router()
 
 router.get("/", async (req, res) => {
     try {
-        const { category } = req.query
-
-        let filter = {}
-        if (category) {
-            filter = { category: category }
-        }
-
-        const services = await Service.find(filter)
+        const services = await Service.find()
         res.json(services)
     } catch (error) {
         console.error(error)
